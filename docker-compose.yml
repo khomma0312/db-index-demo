@@ -1,0 +1,12 @@
+version: "3"
+services:
+  db:
+    image: mysql:8.0-debian
+    platform: linux/amd64
+    container_name: index-demo
+    volumes:
+      - ./conf.d:/etc/mysql/conf.d
+      - ./data:/var/lib/mysql
+      - ./test_db:/test_db
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
