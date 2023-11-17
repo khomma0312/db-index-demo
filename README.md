@@ -15,7 +15,7 @@ $ docker-compose exec -it db bash
 
 // 以下よりDockerコンテナ内で実行
 $ cd /test_db
-$ mysql -u root -p < employees.sql
+$ mysql -u root -p < employees.sql // パスワードには password と入力
 ```
 
 ## その他
